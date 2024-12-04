@@ -1,0 +1,129 @@
+/* Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6; /* Better line spacing */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 0 auto; /* Center align */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50; /* Dark blue background */
+    padding: 15px 0; /* Adjusted padding for a compact header */
+}
+
+.header-content {
+    display: flex; /* Flexbox for header content */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center align items vertically */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.logo img {
+    width: 150px; /* Set logo size */
+}
+
+/* Navigation Styling */
+.navigation ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal navigation */
+    gap: 20px; /* Space between navigation items */
+}
+
+.navigation ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color for links */
+    font-weight: 600; /* Bold font */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.navigation ul li a:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+/* Header Title */
+.header-title {
+    text-align: center; /* Center align title */
+    color: #fff; /* White text color */
+    margin-top: 10px; /* Slight margin */
+}
+
+/* Section Styling */
+.about-intro,
+.mission,
+.team,
+.contact {
+    margin-top: 40px; /* Space between sections */
+    padding: 20px; /* Inner padding for sections */
+    background-color: #fff; /* White background for sections */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    color: #2c3e50; /* Dark blue for section titles */
+    margin-bottom: 15px; /* Space below titles */
+}
+
+/* Team Section */
+.team {
+    display: flex; /* Flexbox for team layout */
+    justify-content: space-around; /* Even spacing */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.team-member {
+    text-align: center; /* Centered text for team members */
+    margin: 20px; /* Spacing around each member */
+}
+
+.team-member img {
+    width: 100px; /* Set image width */
+    height: 100px; /* Set image height */
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Ensure images cover circle without distortion */
+}
+
+/* Contact Section */
+.contact {
+    text-align: center; /* Centered text */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Centered footer text */
+    margin-top: 40px; /* Space above footer */
+    padding: 10px 0; /* Padding for footer */
+    background-color: #2c3e50; /* Dark footer background */
+    color: #fff; /* White footer text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Stack header items */
+        align-items: flex-start; /* Align left */
+    }
+
+    .navigation ul {
+        flex-direction: column; /* Stack navigation links */
+        gap: 10px; /* Spacing between links */
+    }
+
+    .team {
+        flex-direction: column; /* Stack team members */
+        align-items: center; /* Center align team members */
+    }
+}

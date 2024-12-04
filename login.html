@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                
+            </div>
+            <h1 class="header-title">Login</h1>
+        </header>
+        <div class="form-section">
+            <h2 style="color: white;">Login</h2> <!-- Login text in white -->
+            <form method="POST" action="/login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <div id="loginMessage">{{ login_message }}</div> <!-- Placeholder for login messages -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <h1>CookBook Companion</h1>
+            </div>
+        </nav>
+
+        <section class="intro">
+            <h2>Find Delicious Recipes</h2>
+            <p>Enter the ingredients you have, and we'll suggest some amazing recipes just for you!</p>
+            <div class="search-box">
+                <input type="text" id="ingredients" placeholder="e.g., chicken, garlic, tomatoes" />
+                <button onclick="findRecipes()">Get Recipes</button>
+            </div>
+        </section>
+
+        <section class="recipes">
+            <h2 class="recipes-heading">Recommended Recipes</h2>
+            <div class="recipe-list" id="recipe-list">
+                <!-- Recipes will be injected here -->
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Recipe Explorer | Made with ❤️ for foodies</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="header-title">About Us</h1>
+        </header>
+        
+        <section class="about-intro">
+            <h2>Welcome to Our Website</h2>
+            <p>At CookBook Companion, we're passionate about helping you explore the world of cooking! Whether you're a seasoned chef or just starting out, our platform is here to inspire you with delicious recipes tailored to your taste.
+
+                Discover, Create, and Savor!
+                Enter your available ingredients and let our smart recipe recommendation system guide you to delightful meals that are just waiting to be made. With a diverse range of recipes and easy-to-follow instructions, you'll find the perfect dish for any occasion.
+                
+                Join our community of food lovers and embark on a culinary journey that celebrates creativity and flavor. Happy cooking!</p>
+        </section>
+        
+        
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='team1.jpg') }}" alt="Team Member 1">
+                <h3>Brahmi Shah</h3>
+                
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='team2.jpg') }}" alt="Team Member 2">
+                <h3>Vishwaa Shah</h3>
+               
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='team3.jpg') }}" alt="Team Member 3">
+                <h3>Varoon Soneji</h3>
+                
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <p>Email: <a href="mailto:CookBookcompanion@company.com">CookBookcompanion@company.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
