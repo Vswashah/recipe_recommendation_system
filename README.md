@@ -27,6 +27,6 @@ gensim
 nltk
 scikit-learn
 
-![Homepage](screenshots/Screenshot_2024-12-04_141900.png)
-![Recommendations](screenshots/Screenshot_2024-12-04_141944.png)
-![Login Page](screenshots/Screenshot_2024-12-04_142020.png)
+![Homepage](screenshots/Screenshot%2024-12-04%20141900.png)
+![Recommendations](screenshots/Screenshot%2024-12-04%20141944.png)
+![Login Page](screenshots/Screenshot%2024-12-04%20142020.png)
